@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Thebox2Go</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.jpeg" alt="" class="img-fluid"
+          style="max-height: 70px;"></a>
+
+      <a href="#" class="get-started-btn scrollto">Login</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>"Hungry kya?"</h1>
+          <h2>Yummy Indian food at RIT Campus</h2>
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box" style="background-color: #000000a8; border: none;">
+            <!-- <span class="pcoded-micon"><i class="fas fa-utensils"></i></span> -->
+            <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAD0ElEQVRoge2aXYgVZRjHf89x1zPnGCSJFqjURd0LXRhaN5aEJnTjfRfaBwtSIN64ZGO4GGEfICmsIkhEgV6F0I0QVJB1UVcJgaStdlKoVjc7H7pnni7cPc3MmdPMvO97prM0v5vd95n//N/3z5mzM+8zCyUlJSUlo4sUNVHnAM8HFU6gqAgvej6fFjV3mEpREwXCMZTVwBqFY0XNG6ewwAirer8ra9VneWFzhygusHIrPJyD+wqbO8SYrUHTZ53AWWCDwnTN51UBTZDeBNYsDpbPcz/wh4WfEfafsLIPZSNKVZQ9rdfZNEB5PTyQMR6z9DPCOrAQ/S7KMp5O0qnwfXgcwAYbP1PsP2Hh68hY2Zos47vYeLuNnynWgfUun6Oh75iyue3zaFwXwPl7P3q6p1qTPGzqZ4p14PoUVxG+7BUEUWVfXLfCpwF8FZ5bx9lr6meKk9uSCscjBeGF5iRr+4WcjMiUXbf386CxnwFOAtd+4AxwqVdQqpUxXovrvOt8AsyESvVl4/26rH4mOAksZ+iivB2uBbBbfbyIbpq7orwVPZlduoeqiZ8Jzp60vAofiTC7OBZY2QrYFtdVZzmFcKNXUFZ3VvGsqV9enAUWn2agfBgt8kyf7igdUU6HawFsMfXLi9NnadHolk+ExxOFyvmIDp6w8suB08DBPBcjBWV9oq4b08FDNn55cBq4/mffZuCBJF1tnN8jhXv7ZGO/PLi9pI/SAa78U+DXRJ1PO6a7kajL6JcH5/thUSaAa8A1gYmidCUlJf8PBval2wd4Tit8gPbvWUecK6JMeG/yWdLBxL/SCqLC9BIMC/CIVjgx6GBi4IUuYZB0bKkz8D4syiuEb/pLBeGywO7Bh1No+bTR6H51ZBFu1XxW/psky5NWX7N8hPktTZAaWNT++bUwMqw1NbAK37hZzfARuJCmSQ8MX7hZTgGE27sDSA1cg3PAnJMFDRGFm1WinZQk0r/DPrcRPnazrOFRgVPi08ygS0fgCELHfllDQvgrmOf9LNJMgT2fSyjv2K1qiAQcrk9xNYs0c8fDm+OQxF55jggXvFmOZBVnDizv0erCDqBhtKzh0NB5di70vjKRq6e1wqdREbYi2S6foSL8LF221Kf4Jc9puZt4VZ+LwJP/8eX9bQCbvEP8mPdEo65lzWem2mAjwkHgjomHEUIHZb8nbF5432xgYUlzkvWMs1fgJZSard+gaUQ43oV3TYMu4uRfDxWk/QYzwDoXfgnM1A666b64eT88/A6JsxcG7l6XCi8jXHblF+In0cEdjJKSkpKSkpKlw9/omDAwVPokBQAAAABJRU5ErkJggg=="></span>
+            <h3><a href="">Fresh Food</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box" style="background-color: #000000a8; border: none;">
+            <!-- <span class="pcoded-micon"><i class="fas fa-check"></i></span> -->
+            <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="48" height="48"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#f77f00"><path d="M86,14.33333c-39.5815,0 -71.66667,32.08517 -71.66667,71.66667c0,39.5815 32.08517,71.66667 71.66667,71.66667c39.5815,0 71.66667,-32.08517 71.66667,-71.66667c0,-39.5815 -32.08517,-71.66667 -71.66667,-71.66667zM121.83333,80.03733l-13.0075,30.28633c-1.13233,2.63733 -3.72667,4.343 -6.58617,4.343h-37.73967c-3.956,0 -7.16667,-3.21067 -7.16667,-7.16667v-39.7105c0,-2.0855 0.91017,-4.07067 2.494,-5.43233l26.17267,-22.52483l3.89867,3.43283c2.00667,1.77017 2.86667,4.50783 2.2145,7.10933l-3.51167,14.1255h26.06517c3.956,0 7.16667,3.21067 7.16667,7.16667zM143.33333,86c0,31.66233 -25.671,57.33333 -57.33333,57.33333c-31.66233,0 -57.33333,-25.671 -57.33333,-57.33333c0,-31.66233 25.671,-57.33333 57.33333,-57.33333c31.66233,0 57.33333,25.671 57.33333,57.33333z"></path></g></g></svg></span>
+            <h3><a href="">Convenient</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box" style="background-color: #000000a8; border: none;">
+            <!-- <span class="pcoded-micon"><i class="fas fa-hand-holding-usd fa-2"></i></span> -->
+            <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="50" height="50"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#f77f00"><path d="M68.8,13.76c-1.89888,0 -3.44,1.54112 -3.44,3.44v43.6114c0,19.694 14.58372,36.93007 34.19172,38.77391c22.4976,2.11904 41.48828,-15.59771 41.48828,-37.66531v-44.72c0,-1.89888 -1.54112,-3.44 -3.44,-3.44c-1.89888,0 -3.44,1.54112 -3.44,3.44v18.89985c0,3.07192 -3.75363,4.57428 -5.85203,2.3314c-0.02752,-0.02752 -0.0531,-0.05983 -0.08062,-0.08735c-0.59168,-0.6364 -0.94735,-1.45437 -0.94735,-2.32469v-18.81922c0,-1.89888 -1.54112,-3.44 -3.44,-3.44c-1.89888,0 -3.44,1.54112 -3.44,3.44v9.52719c0,2.3564 -2.3642,4.08204 -4.5486,3.20484c-0.02408,-0.01032 -0.05326,-0.01656 -0.0739,-0.02688c-1.33816,-0.5332 -2.2575,-1.76365 -2.2575,-3.19813v-9.50703c0,-1.89888 -1.54112,-3.44 -3.44,-3.44c-1.89888,0 -3.44,1.54112 -3.44,3.44v7.01438c0,1.8748 -1.51817,3.39297 -3.39297,3.39297h-0.08735c-1.87824,0 -3.39969,-1.51817 -3.39969,-3.39297v-7.01438c0,-1.89888 -1.54112,-3.44 -3.44,-3.44c-1.89888,0 -3.44,1.54112 -3.44,3.44v9.50703c0,1.43448 -0.9195,2.66492 -2.25078,3.19813c-0.02752,0.01032 -0.05654,0.01656 -0.08062,0.02688c-2.1844,0.8772 -4.5486,-0.84517 -4.5486,-3.19813v-9.53391c0,-1.89888 -1.54112,-3.44 -3.44,-3.44c-1.89888,0 -3.44,1.54112 -3.44,3.44v18.81922c0,0.87032 -0.35223,1.69173 -0.94735,2.32469c-0.02752,0.02752 -0.05982,0.05983 -0.08734,0.08735c-2.09496,2.24632 -5.84531,0.74052 -5.84531,-2.3314v-18.89985c0,-1.89888 -1.54112,-3.44 -3.44,-3.44zM99.76,37.84h0.32922h6.2686h0.27547v6.0939c2.52152,0.47128 4.71769,1.64696 6.38953,3.4736c1.9092,2.09152 2.99328,4.96306 2.98984,7.6325h-6.38281c-0.17544,-2.72792 -1.45802,-5.72438 -6.32906,-5.72437c-4.47544,0 -6.5575,1.75601 -6.5575,5.52281c0,3.1476 2.81279,3.95073 7.78703,5.09281c5.5384,1.2728 12.43313,2.85418 12.42969,11.07922c0,1.5652 -0.52976,9.154 -10.32,10.74328v4.24625h-0.28219h-6.26188h-0.32922v-4.35375c-6.69424,-1.2728 -10.07329,-5.40053 -10.27969,-12.62453l-0.00672,-0.22172h6.38953l-0.00672,0.215c-0.05848,2.28072 0.53879,4.06614 1.77375,5.3011c2.09152,2.09152 5.42881,2.1164 5.56985,2.1164c6.41904,0 7.37719,-3.36948 7.37719,-5.375c0,-3.34368 -2.81279,-4.1395 -7.78703,-5.25406c-5.54184,-1.2384 -12.4364,-2.77678 -12.4364,-11.29422c0,-0.95976 0.29041,-9.05467 9.39953,-10.58203zM152.54922,89.44672c-2.49418,-0.08228 -5.03235,0.55373 -7.28985,1.97531l-32.16265,19.82703c2.43896,2.48712 3.86328,5.85945 3.86328,9.41297c0,7.4648 -6.07348,13.53828 -13.53828,13.53828c-1.05264,0 -2.09614,-0.12545 -3.10406,-0.36281c-2.64536,-0.62608 -36.4397,-10.74323 -40.28562,-11.89219c-1.81976,-0.54696 -2.84805,-2.4668 -2.30453,-4.28656c0.54696,-1.81976 2.46353,-2.84805 4.27985,-2.30453c15.01904,4.49952 38.04178,11.35781 39.89594,11.79813c0.49192,0.11696 1.00244,0.17469 1.51844,0.17469c3.67048,0 6.65828,-2.9878 6.65828,-6.65828c0,-2.37016 -1.23163,-4.50038 -3.29219,-5.6975c-1.00104,-0.58136 -34.95551,-15.42657 -41.78391,-18.42281c-10.6984,-4.69904 -23.03418,-4.81514 -33.8289,-0.3225l-22.17859,9.23828c-1.7544,0.7224 -2.11641,2.31733 -2.11641,4.49485v41.43453c0,1.89888 1.54112,3.44 3.44,3.44c1.0492,0 1.88818,-0.5654 2.02234,-0.66516l11.98625,-8.79484c6.10944,-4.48232 14.25385,-5.46761 21.41937,-2.51953l40.23188,14.2639c2.26008,0.80152 4.60159,1.19594 6.92703,1.19594c4.44104,0 8.81672,-1.43002 12.47,-4.19922l54.13297,-41.02469c5.74824,-3.96288 7.33349,-11.68992 3.60797,-17.5964c-2.3822,-3.7797 -6.41164,-5.90975 -10.5686,-6.04688z"></path></g></g></svg></span>
+            <h3><a href="">Affordable</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box" style="background-color: #000000a8; border: none;">
+            <!-- <span class="pcoded-micon"><i class="fas fa-user-lock"></i></span> -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="48" height="48"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><defs><linearGradient x1="109.29167" y1="-16.76642" x2="109.29167" y2="74.31475" gradientUnits="userSpaceOnUse" id="color-1_INNYV2VMFbcz_gr1"><stop offset="0" stop-color="#f77f00"></stop><stop offset="1" stop-color="#e38101"></stop></linearGradient><linearGradient x1="2402.625" y1="204.57616" x2="2402.625" y2="1578.21001" gradientUnits="userSpaceOnUse" id="color-2_INNYV2VMFbcz_gr2"><stop offset="0" stop-color="#f77f00"></stop><stop offset="1" stop-color="#e38101"></stop></linearGradient><linearGradient x1="86" y1="143.91383" x2="86" y2="158.46933" gradientUnits="userSpaceOnUse" id="color-3_INNYV2VMFbcz_gr3"><stop offset="0.023" stop-color="#692a15"></stop><stop offset="0.344" stop-color="#802d10"></stop><stop offset="1" stop-color="#8b3817"></stop></linearGradient><linearGradient x1="86" y1="76.7765" x2="86" y2="160.11767" gradientUnits="userSpaceOnUse" id="color-4_INNYV2VMFbcz_gr4"><stop offset="0" stop-color="#a34f27"></stop><stop offset="0.587" stop-color="#8b3817"></stop><stop offset="1" stop-color="#802d10"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M103.29675,38.62529l-41.48425,50.95805h94.95833l-41.48407,-50.95805c-1.48822,-1.76998 -3.68252,-2.79186 -5.99501,-2.79186c-2.31249,0 -4.50679,1.02188 -5.99501,2.79186z" fill="url(#color-1_INNYV2VMFbcz_gr1)"></path><path d="M68.13873,30.9758l-52.90956,58.60753h116.45833l-52.90956,-58.60753c-1.35885,-1.5052 -3.29177,-2.36428 -5.3196,-2.36428c-2.02783,0 -3.96075,0.85908 -5.3196,2.36428z" fill="url(#color-2_INNYV2VMFbcz_gr2)"></path><circle cx="17" cy="16" transform="scale(3.58333,3.58333)" r="1" fill="#f77f00"></circle><circle cx="14" cy="20" transform="scale(3.58333,3.58333)" r="1" fill="#f77f00"></circle><circle cx="20" cy="19" transform="scale(3.58333,3.58333)" r="1" fill="#f77f00"></circle><path d="M53.75,136.16667h64.5v0v14.33333c0,3.95804 -3.20863,7.16667 -7.16667,7.16667h-50.16667c-3.95804,0 -7.16667,-3.20863 -7.16667,-7.16667v-14.33333z" fill="url(#color-3_INNYV2VMFbcz_gr3)"></path><path d="M17.91667,82.41667h136.16667c1.97902,0 3.58333,1.60431 3.58333,3.58333v0c0,33.64335 -27.27332,60.91667 -60.91667,60.91667h-21.5c-33.64335,0 -60.91667,-27.27332 -60.91667,-60.91667v0c0,-1.97902 1.60431,-3.58333 3.58333,-3.58333z" fill="url(#color-4_INNYV2VMFbcz_gr4)"></path></g></g></svg></span>
+            <h3><a href="">Authentic</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box" style="background-color: #000000a8; border: none; padding-top: 40px;" >
+            <span class="pcoded-micon"><i class="fas fa-shipping-fast fa-2x"></i></span>
+            <span></span>
+            <h3><a href="">Fast Delivery</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+
+   
+
+    <!-- ======= Clients Section ======= -->
+    <!-- End Clients Section -->
+
+    <!-- ======= Features Section ======= -->
+    <!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services" style="background-color: rgb(254,239,208);;">
+      <div class="container" data-aos="fade-up">
+
+        <h3 class="text-center" style="color: #f77f00;padding-bottom: 5px;"><b>How does it work</b></h3>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img class="img-fluid" src="assets/img/icon1.png"></div>
+              <h4><a href="#why-us">Check our weekly menu</a></h4>
+              <p>Check our well crafted weekly menu and place an order for the week days</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><img class="img-fluid" src="assets/img/icon2.png"></div>
+              <h4><a href="#buy"> Buy meal credits</a></h4>
+              <p>We have created a subscription based model where people can buy meal credits that have a two week
+                validity.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><img class="img-fluid" src="assets/img/icon3.png"></div>
+              <h4><a >Order</a></h4>
+              <p>Order by texting 716-298-7765 before midnight to get the food delivered the next day</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+            data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><img class="img-fluid" src="assets/img/icon4.png"></div>
+              <h4><a >Pick up</a></h4>
+              <p>Pick up your meal box from our delivery vehicle parked beside crossroads between 12-1pm. Members have
+                to just show their ID and pick up the meal.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Whu Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container"  >
+
+        <div class="">
+          <h3 class="text-center" style="color: #f77f00;padding-bottom: 5px;"><b>Full Menu</b></h3>
+          <p class="text-center"  style="color: #a3a2a2;">Tuesday to Friday</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <h4 class="text-center">Tuesday ($ 10)</h4>
+              <p>Chana Masala</p>
+              <p>Palak Paneer</p>
+              <p>Rice</p>
+              <p>2 Pieces Bhatura</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <h4 class="text-center">Wednesday ($10)</h4>
+              <p>Kadhai Paneer</p>
+              <p>Dal Tadaka</p>
+              <p>Rice</p>
+              <p>2 Pieces Naan</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+           
+              <h4 class="text-center">Thursday ($ 10)</h4>
+              <p>Mix Veg Curry</p>
+              <p>Rice</p>
+              <p>Bhindi</p>
+              <p>2 Pieces Naan</p>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-lg-6" >
+            <div class="box">
+              <h4 class="text-center">Friday ($ 10)</h4>
+              <p>Veg biryani with Raita</p>
+              <p>Aaloo gobi</p>
+              <p>2 Pieces Bhatura</p>
+             
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="box" >
+              <h4 class="text-center">Extras</h4>
+              <p>chai - $ 1.5</p>
+              <p>Rasmalai - $1.5</p>
+              <p>Mango Lassi - $1.5</p> 
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Whu Us Section -->
+
+  
+    <!-- ======= Portfolio Section ======= -->
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <!-- End Counts Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+     
+    <!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <!-- End Contact Section -->
+
+    <!-- ======= Specials Section ======= -->
+   <!-- End Specials Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in" id="buy">
+
+        <div class="text-center">
+          <h3 >Payment Plans</h3>
+          <!-- <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+          <div class="plans text-center pt-3 mb-3 text-white" style="margin-bottom:10px; font-size:17px;">4 meal credits@$10/meal = $40<br>
+            Buy extra credits after subscription plan: $10/credit<br>
+            Buy 1 Time meal: $12/meal<br>
+            Credits Valid for two weeks from the day of purchase</div>
+
+          <a class="cta-btn" href="#">PROCEED TO PAYMENT</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+     
+     <!-- ======= About Section ======= -->
+     <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about2.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3 style="color: #f77f00;">About Us</h3>
+
+            <ul>
+              <li><i class="ri-check-double-line"></i> At the heart of the box2 Go is our belief that food should
+                enlighten the body and mind. The body, as our temple, deserves the utmost respect of nourishment and
+                care – to make for a lighter spirit and balanced life. It’s something we cherished ever since our roots
+                in a small home kitchen, preparing food that promotes purity of being and living. We continue cooking as
+                a reverence to that ideal – to you, your temple, your family, and our dear Mother Earth who supports us
+                all.</li>
+            </ul>
+            <h3 style="color: #f77f00;">Helping Others</h3>
+
+            <ul>
+              <li><i class="ri-check-double-line"></i>As part of our code to life and nourishment, we take pride in
+                lightening the burdens of those facing difficulties. Every week, thebox2Go donates meals to women’s
+                shelters, the elderly, and people facing financial troubles.
+
+                Please contact us if someone you know is in need of a meal and we assure them the same service and
+                quality for them.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Company</h3>
+              <p>
+                <!-- <span>About us</span>
+                <span>Team</span> -->
+                <!-- A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br> -->
+              </p>
+              <!-- <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>CONTACT</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>LEGAL</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Contact</h4>
+            <h4>Partner with us</h4>
+            <p></p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        All rights Reserved &copy; Copyright Yasham Software,2021
+
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
